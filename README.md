@@ -34,6 +34,7 @@ Les corrections des activités suivantes seront transmises au fil de l’eau ; e
 
 ### 1. Couverture du code par les tests de la classe QuestionAChoixExclusif (en mode Kata)
 
+- Étudiez la structure et le code présent dans le projet.
 - Créez la classe de test unitaire permettant de tester la classe *QuestionAChoixExclusif*.
 - Écrivez les tests unitaires permettant de couvrir le code de la classe *QuestionAChoixExclusif* à 100%.
 
