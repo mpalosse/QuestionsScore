@@ -22,9 +22,9 @@ Rappel pour configurer Git lors d’un premier usage sur une machine de travail 
 
 Créez votre projet sur Github en vous inscrivant au devoir indiqué par votre enseignant.  
 Clonez dans l’espace de travail de votre choix le projet Github généré pour vous par Github Classroom.  
-Importez/ouvrez votre projet local dans l'IDE de votre choix supportant Maven (l'enseignant utilisera [IntelliJ](https://www.jetbrains.com/idea/download/)).  
+Importez/ouvrez votre projet local dans l'IDE [IntelliJ](https://www.jetbrains.com/idea/download/).  
 Modifiez le fichier README pour qu’il contienne vos nom, prénom et groupe en place des données exemples.  
-Commitez et pushez  dans votre dépôt distant en utilisant le message de commit suivant :
+Commitez et pushez dans votre dépôt distant en utilisant le message de commit suivant :
 
 > fix #0 Activité préliminaire terminée
 
@@ -36,7 +36,6 @@ Les corrections des activités suivantes seront transmises au fil de l’eau ; e
 
 - Créez la classe de test unitaire permettant de tester la classe *QuestionAChoixExclusif*.
 - Écrivez les tests unitaires permettant de couvrir le code de la classe *QuestionAChoixExclusif* à 100%.
-
 
 > fix #1 Tests sur QuestionAChoixExclusif
 
@@ -65,7 +64,7 @@ Les corrections des activités suivantes seront transmises au fil de l’eau ; e
 - Complétez les tests unitaires permettant de couvrir le code de la classe *ScoreCalculateur* en utilisant les cas de test suivants :
     - quand on calcule le score pour une liste de réponses contenant les valeurs 1,2,3,4,5 on obtient 0 à 0,01 près comme résultat ;
     - quand on calcule le score pour une liste de réponses contenant les valeurs 1,2 et 3 on obtient 16.66 à 0,01 près comme résultat ;
-- Après avoir constaté que ce test ne passait pas, modifiez le code de l'application et des tests (si nécessaire) afin que **tous les tests passent**. (Conseil : assurez-vous que vos modifications ne créent pas de nouvelles erreurs Checkstyle.)
+- Après avoir constaté que ces tests ne passaient pas, modifiez le code de l'application et des tests (si nécessaire) afin que **tous les tests passent**. (Conseil : assurez-vous que vos modifications ne créent pas de nouvelles erreurs Checkstyle.)
 
 > fix #4 Correction application
 
