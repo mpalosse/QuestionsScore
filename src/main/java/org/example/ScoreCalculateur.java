@@ -1,4 +1,4 @@
-package miagem1;
+package org.example;
 
 import java.util.List;
 

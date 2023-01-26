@@ -1,71 +1,42 @@
-# MIAGe Master 1 - TP Tests 1
+# R4-02 Qualité de développement - QuestionsScore
 
-### NOM : DOE
-### Prénom : John
-### Groupe de TP : 
-- [ ] 1
-- [x] 2
-- [ ] 3
+### NOM : XXX
+### Prénom : YYY
+### Groupe de TP :
+- [ ] A1
+- [ ] A2
+- [ ] A3D
 
+### Consignes générales
 
-### 0. Création et initialisation du projet Maven "question-score-project"
-
-Créez un compte sur la plateforme Github si ce n'est pas déjà fait.  
-Vérifiez votre configuration Git locale. 
-Rappel pour configurer Git lors d’un premier usage sur une machine de travail :
-
-    git config --global user.name "Your Username"
-    git config --global user.email "Your email"
-    git config --global color.ui "auto"
-    git config --global -l
+- Le travail à faire est décrit dans le document `ACTIVITE.md`.
 
 
-Créez votre projet sur Github en vous inscrivant au devoir indiqué par votre enseignant.  
-Clonez dans l’espace de travail de votre choix le projet Github généré pour vous par Github Classroom.  
-Importez/ouvrez votre projet local dans l'IDE [IntelliJ](https://www.jetbrains.com/idea/download/).  
-Modifiez le fichier README pour qu’il contienne vos nom, prénom et groupe en place des données exemples.  
-Commitez et pushez dans votre dépôt distant en utilisant le message de commit suivant :
+### Consignes sur l'utilisation de Git et Github
 
-> fix #0 Activité préliminaire terminée
+Durant votre travail, à chaque apparition d'une indication de type
 
-Dans la suite de ce document, à chaque fois que vous trouverez un énoncé commençant par “fix #...”, vous devez committer et pusher les modifications sur votre dépôt distant en utilisant comme message de commit cet énoncé.
+> fix #…
 
-Les corrections des activités suivantes seront transmises au fil de l’eau ; elles seront disponibles dans les différentes branches du projet Github suivant : https://github.com/miage-toulouse/question-score-project 
+commitez et pushez sur Github votre projet mis à jour avec comme message de commit le message indiqué "fix #...".
 
-### 1. Couverture du code par les tests de la classe QuestionAChoixExclusif (en mode Kata)
+### Rappel Git
 
-- Étudiez la structure et le code présent dans le projet.
-- Créez la classe de test unitaire permettant de tester la classe *QuestionAChoixExclusif*.
-- Écrivez les tests unitaires permettant de couvrir le code de la classe *QuestionAChoixExclusif* à 100%.
+Pour utiliser Git, la configuration de votre identité Git doit être opérante. 
+Si ce n'est pas le cas, voici un rappel des commandes à exécuter pour effectuer
+la configuration.  
+`git config --global user.name "mon_user_name"`  
+`git config --global user.email "mon_adresse"`  
+où "mon_user_name" est à remplacer par votre nom d'utilisateur GitHub et "mon_adresse" est est à remplacer par votre 
+adresse électronique utilisée pour créer votre compte GitHub. Ensuite, pour vérifier votre configuration, vous pouvez 
+utiliser la commande  
+`git config --global -l`
 
-> fix #1 Tests sur QuestionAChoixExclusif
+Pour récupérer le projet en local :  
+`git clone https://...`
 
-### 2. Couverture du code par les tests de la classe QuestionAChoixMultiple 
+Pour effectuer un commit et un push :
 
-- Créez la classe de test unitaire permettant de tester la classe *QuestionAChoixMuliple*.
-- Écrivez les tests unitaires permettant de couvrir le code de la classe *QuestionAChoixMultiple* à 100%.
-
-> fix #2 Tests sur QuestionAChoixMultiple
-
-### 3. Couverture du code par les tests de la classe ScoreCalculateur 
-
-- Créez la classe de test unitaire permettant de tester la classe *ScoreCalculateur*.
-- Écrivez les tests unitaires permettant de couvrir le code de la classe *ScoreCalculateur* à 100% en utilisant la contrainte et les cas de tests suivants :
-    - pour chaque cas de test, l'instance de *ScoreCalculateur* utilisée est testée sur une question de type *QuestionAChoixMultiple* initialisée de la
-     manière suivante :
-    `questionAChoixMultiple = new QuestionAChoixMultiple("q1",new ArrayList<Integer>(Arrays.asList(2,3,5)));`
-    - quand on calcule le score pour une liste de réponses contenant les valeurs 1 et 4, on obtient 0 comme résultat ;
-    - quand on calcule le score pour une liste de réponses contenant les valeurs 2 et 3, on obtient 2*100/3 à 0,01 près comme résultat ;
-    - quand on calcule le score pour une liste de réponses contenant les valeurs 2, 3 et 5, on obtient 100 à 0,01 près comme résultat.
-
-> fix #3 Tests sur ScoreCalculateur
-
-### 4. Correction de l'application
-
-- Complétez les tests unitaires permettant de couvrir le code de la classe *ScoreCalculateur* en utilisant les cas de test suivants :
-    - quand on calcule le score pour une liste de réponses contenant les valeurs 1,2,3,4,5 on obtient 0 à 0,01 près comme résultat ;
-    - quand on calcule le score pour une liste de réponses contenant les valeurs 1,2 et 3 on obtient 16.66 à 0,01 près comme résultat ;
-- Après avoir constaté que ces tests ne passaient pas, modifiez le code de l'application et des tests (si nécessaire) afin que **tous les tests passent**. (Conseil : assurez-vous que vos modifications ne créent pas de nouvelles erreurs Checkstyle.)
-
-> fix #4 Correction application
-
+`git add .`  
+`git commit -m"fix #... ..."`  
+`git push`

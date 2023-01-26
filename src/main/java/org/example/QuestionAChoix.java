@@ -1,4 +1,4 @@
-package miagem1;
+package org.example;
 
 /**
  * Interface représentant une question à choix multiple ou à choix exclusif

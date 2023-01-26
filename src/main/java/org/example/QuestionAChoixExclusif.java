@@ -1,4 +1,4 @@
-package miagem1;
+package org.example;
 
 /**
  * Classe représentant une question à choix exclusive
